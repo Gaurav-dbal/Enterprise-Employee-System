@@ -1,0 +1,246 @@
+Git Command Cheat Sheet (Must Remember)
+1. Check Git Version
+git --version
+Why?
+
+Verifies Git is installed.
+
+Example Output
+
+git version 2.48.1
+2. Initialize Git
+git init
+Why?
+
+Converts a normal folder into a Git repository.
+
+Think of it as:
+
+Normal Folder
+
+↓
+
+Git Repository
+3. Check Status ⭐⭐⭐⭐⭐
+git status
+Why?
+
+This is probably the most frequently used Git command.
+
+It tells you:
+
+Which branch you're on.
+Which files changed.
+Which files are staged.
+Whether everything is committed.
+
+Example
+
+On branch main
+
+nothing to commit
+
+working tree clean
+4. Check Current Branch
+git branch
+
+Example
+
+* main
+
+The * indicates your current branch.
+
+5. Add All Files ⭐⭐⭐⭐⭐
+git add .
+Why?
+
+Moves all changed files to the Staging Area.
+
+Think:
+
+Working Folder
+
+↓
+
+Staging Area
+6. Add One File
+git add main.py
+
+Only stages main.py.
+
+7. Commit ⭐⭐⭐⭐⭐
+git commit -m "Added Employee CRUD"
+Why?
+
+Creates a snapshot of your work.
+
+Always write meaningful messages.
+
+Good
+
+git commit -m "Added Salary Calculator"
+
+Bad
+
+git commit -m "Update"
+8. View Commit History ⭐⭐⭐⭐
+git log
+
+or
+
+git log --oneline
+
+Example
+
+7d4e8ab Added Salary Calculator
+
+4a7de31 Project Initialized
+9. Check Remote Repository
+git remote -v
+
+Example
+
+origin
+
+https://github.com/Gaurav-dbal/Enterprise-Employee-System.git
+10. Add Remote Repository
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+
+Used only once.
+
+11. Change Remote URL
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+
+Useful if the URL is incorrect.
+
+12. Push to GitHub ⭐⭐⭐⭐⭐
+git push -u origin main
+
+First push.
+
+Later:
+
+git push
+
+is enough.
+
+13. Pull Latest Changes
+git pull
+
+Downloads the latest updates from GitHub.
+
+14. Clone Repository
+git clone https://github.com/USERNAME/REPOSITORY.git
+
+Copies an existing repository to your computer.
+
+15. Rename Branch
+git branch -M main
+
+Changes:
+
+master
+
+↓
+
+main
+16. View Differences
+git diff
+
+Shows changes before committing.
+
+17. Undo Staging
+git restore --staged main.py
+
+Removes a file from the staging area while keeping your code changes.
+
+18. Restore File
+git restore main.py
+
+Discards uncommitted changes to main.py.
+
+⚠️ Use carefully—those changes are lost.
+
+19. Remove File
+git rm main.py
+
+Deletes the file and stages the deletion.
+
+20. Create New Branch
+git checkout -b feature-login
+
+Creates and switches to a new branch.
+
+21. Switch Branch
+git checkout main
+
+or (newer syntax)
+
+git switch main
+22. Merge Branch
+git merge feature-login
+
+Merges changes into the current branch.
+
+Git Workflow
+Create Files
+
+↓
+
+git status
+
+↓
+
+git add .
+
+↓
+
+git status
+
+↓
+
+git commit -m "Meaningful Message"
+
+↓
+
+git push
+
+↓
+
+GitHub
+Commands You'll Use Every Day
+Command	Frequency	Purpose
+git status	⭐⭐⭐⭐⭐	Check project state
+git add .	⭐⭐⭐⭐⭐	Stage all changes
+git commit -m "..."	⭐⭐⭐⭐⭐	Save a snapshot
+git push	⭐⭐⭐⭐⭐	Upload to GitHub
+git pull	⭐⭐⭐⭐	Get latest changes
+git log --oneline	⭐⭐⭐	View commit history
+git branch	⭐⭐⭐	Check current branch
+git remote -v	⭐⭐	Verify remote repository
+Commands You Should Memorize First
+
+If you're just starting, focus on these 8 commands:
+
+git init
+git status
+git add .
+git commit -m "message"
+git log --oneline
+git branch
+git push
+git pull
+
+Master these first, and you'll be comfortable with Git for most day-to-day development.
+
+
+
+#Python Notes - Basic Crud Operations
+
+| Python                       | SQL              |
+| ---------------------------- | ---------------- |
+| `employees.append(employee)` | `INSERT`         |
+| `for emp in employees`       | `SELECT`         |
+| `if emp["id"] == update_id`  | `WHERE id = ...` |
+| `emp["salary"] = ...`        | `UPDATE`         |
+| `employees.remove(emp)`      | `DELETE`         |

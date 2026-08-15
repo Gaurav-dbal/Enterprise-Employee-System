@@ -1,0 +1,19 @@
+Oracle Integration Cloud (OIC) is an integration platform
+used to connect applications and services.
+
+OIC integrations can use REST APIs to communicate with
+external applications.
+
+Authentication is required when an integration accesses
+protected APIs.
+
+OAuth 2.0 is commonly used for API authorization.
+
+When an integration fails, error handling and monitoring
+should be used to identify the cause of the failure.
+
+Retry policies can be configured for certain integration
+failures.
+
+OIC integrations can connect Oracle Fusion applications
+with external enterprise applications.

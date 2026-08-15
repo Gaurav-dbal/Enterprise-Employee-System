@@ -19,3 +19,10 @@ Successfully installed numpy-2.4.6 pandas-3.0.5 python-dateutil-2.9.0.post0 six-
 
 [notice] A new release of pip available: 22.3.1 -> 26.2.1
 [notice] To update, run: python.exe -m pip install --upgrade pip
+
+
+
+CLIENT_ID=demo-client-id
+CLIENT_SECRET=demo-client-secret
+TOKEN_URL=https://example.com/oauth/token
+API_URL=https://example.com/api/users
